@@ -73,7 +73,7 @@ class TaskBot:
             time.sleep(43200)
         
 
-task = TaskBot('1201089953:AAFfOtC2524F7btnS9Oppsfqur3xO6OgevU', '@mosschanell')
+task = TaskBot('token', 'channel')
 task.tasks_sender()
 
 
