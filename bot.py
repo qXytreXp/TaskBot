@@ -214,7 +214,7 @@ def task_bot(message):
         num_task = int(num_task)
         user_id = message.from_user.id 
 
-        task = TaskBot(token='1201089953:AAFfOtC2524F7btnS9Oppsfqur3xO6OgevU', mode_chat_bot=True, user_id=user_id, num_task_bot=num_task)
+        task = TaskBot(token='', mode_chat_bot=True, user_id=user_id, num_task_bot=num_task)
         task.tasks_sender()
 
     else:
@@ -231,6 +231,6 @@ def task_bot(message):
 thread = threading.Thread(target=bot.polling, daemon=True)
 thread.start()
 
-task = TaskBot('1201089953:AAFfOtC2524F7btnS9Oppsfqur3xO6OgevU', '@eulermosstasks', time_sleep=60)
+task = TaskBot('', '@eulermosstasks', time_sleep=60)
 task.tasks_sender()
 
